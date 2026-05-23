@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mobilebanking-rs
+  name: mobilebanking-deploy
   labels:
     app: bank
 spec:
-  replicas: 10
+  replicas: 6
   selector:
     matchLabels:
       app: bank
